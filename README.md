@@ -37,9 +37,6 @@ O projeto tem como finalidade **estabelecer uma conexão** entre **empresas e/ou
 <!-- ## **:computer: Tecnologias** -->
 
 
-## **:page_with_curl: LICENÇA**
-
-Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
 
 
 
