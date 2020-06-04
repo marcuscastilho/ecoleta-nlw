@@ -1,0 +1,119 @@
+:root {
+  --title-color: #322153;
+  --primary-color:#34cb79;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #e0e0e0;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5 , h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--title-color);
+}
+
+#page-home {
+  height: 115vh;
+  background: url('../assets/home-background.svg') no-repeat;
+  background-position: 35vw bottom;
+}
+#page-home .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#page-home .content header {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+#page-home .content header a {
+  display: flex;
+  color: var(--title-color);
+  font-weight: 700;
+}
+#page-home .content header a span {
+  display: flex;
+  margin-right: 15px;
+  background-image: url('../assets/log-in.svg');
+  height: 20px;
+  width: 20px;  
+}
+#page-home .content main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  max-width: 560px;
+}
+#page-home .content main h1 {
+  font-size: 54px;
+}
+#page-home .content main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+#page-home .content main a {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  height: 72px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  transition: 400ms;
+}
+#page-home .content main a:hover {
+  background-color: #2fb86e;
+}
+#page-home .content main a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 72px;
+  border-radius: 8px 0px 0px 8px;
+  background-color: rgb(0,0,0,0.08);
+}
+#page-home .content main a span::after {
+  content: "";
+  background-image: url('../assets/search.svg');
+  height: 20px;
+  width: 20px;
+}
+#page-home .content main a strong {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 900px){
+  #page-home {
+    background-position-x: 70vw;
+  }
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+  #page-home header a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
